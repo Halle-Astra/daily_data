@@ -1,0 +1,1 @@
+2024-01-27 10:06:57.576 | INFO     | utils.log:init_logger:11 - Initialized the logger instance with the configuration {'sink': 'logs/daily_data.log.txt', 'rotation': '12:00', 'level': 'DEBUG'}.

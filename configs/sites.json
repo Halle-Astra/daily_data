@@ -1,0 +1,23 @@
+{
+  "must": {
+    "zhihu": {
+      "base_url": "https://www.zhihu.com/",
+      "login_path": "signin",
+      "targets": {
+        "primary": {
+          "path": "",
+          "candidates_info": {
+            "method": "xpath",
+            "value": "//*[@id=\"TopstoryContent\"]/div/div/div/div/div/div/div/div/h2/div/a/@href",
+            "save_pics": true
+          }
+        }
+      },
+      "cookies": {
+        "session_cookie": "cookies/zhihu.txt"
+      },
+      "executor": "zhihu.Executor_v1"
+    }
+  },
+  "relax": {}
+}

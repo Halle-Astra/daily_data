@@ -1,0 +1,30 @@
+2024-02-21 14:08:40.322 | INFO     | utils.log:init_logger:11 - Initialized the logger instance with the configuration {'sink': 'logs/daily_data.log.txt', 'rotation': '12:00', 'level': 'DEBUG'}.
+2024-02-21 14:08:41.601 | WARNING  | clients.requests_client:login:68 - Login failed, Wait till next round!
+2024-02-21 14:08:47.448 | WARNING  | clients.requests_client:login:68 - Login failed, Wait till next round!
+2024-02-21 14:08:52.762 | WARNING  | clients.requests_client:login:68 - Login failed, Wait till next round!
+2024-02-21 14:08:52.763 | ERROR    | clients.requests_client:login:72 - LoginError: Login failed, ensure your login credential is correct!
+2024-02-21 14:08:53.210 | WARNING  | clients.requests_client:login:68 - Login failed, Wait till next round!
+2024-02-21 14:08:58.504 | WARNING  | clients.requests_client:login:68 - Login failed, Wait till next round!
+2024-02-21 14:09:04.104 | WARNING  | clients.requests_client:login:68 - Login failed, Wait till next round!
+2024-02-21 14:09:04.106 | ERROR    | clients.requests_client:login:72 - LoginError: Login failed, ensure your login credential is correct!
+2024-02-21 14:09:04.107 | INFO     | executors.zhihu:__init__:14 - https://www.zhihu.com/
+2024-02-21 14:09:04.109 | INFO     | executors.manager:init_group:26 - The site zhihu has been initiated as zhihu.Executor_v1
+2024-02-21 14:09:04.110 | INFO     | executors.manager:init:31 - Site groups initiated. Fixed sites has 1. Relaxing sites has 0
+2024-02-21 14:09:04.111 | INFO     | clients.requests_client:get:81 - the headers are: 
+{'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36 Edg/120.0.0.0', 'Connection': 'keep-alive', 'Content-Type': 'application/json', 'Referer': 'https://www.zhihu.com/signin'}
+, and the kwargs are:
+{'headers': {'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36 Edg/120.0.0.0', 'Connection': 'keep-alive', 'Content-Type': 'application/json', 'Referer': 'https://www.zhihu.com/signin'}} 
+2024-02-21 14:09:04.418 | INFO     | executors.core:run_primary:137 - result: []
+2024-02-21 14:09:04.419 | ERROR    | executors.core:run_primary:142 - No any result of primary task. result: []
+2024-02-21 14:17:05.408 | INFO     | utils.log:init_logger:11 - Initialized the logger instance with the configuration {'sink': 'logs/daily_data.log.txt', 'rotation': '12:00', 'level': 'DEBUG'}.
+2024-02-21 14:20:11.033 | INFO     | utils.log:init_logger:11 - Initialized the logger instance with the configuration {'sink': 'logs/daily_data.log.txt', 'rotation': '12:00', 'level': 'DEBUG'}.
+2024-02-21 14:20:14.405 | INFO     | clients.requests_client:login:70 - Login successfully!
+2024-02-21 14:20:17.250 | INFO     | clients.requests_client:login:70 - Login successfully!
+2024-02-21 14:20:17.252 | INFO     | executors.zhihu:__init__:14 - https://www.zhihu.com/
+2024-02-21 14:20:17.252 | INFO     | executors.manager:init_group:26 - The site zhihu has been initiated as zhihu.Executor_v1
+2024-02-21 14:20:17.253 | INFO     | executors.manager:init:31 - Site groups initiated. Fixed sites has 1. Relaxing sites has 0
+2024-02-21 14:20:17.253 | INFO     | clients.requests_client:get:88 - the headers are: 
+{'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36 Edg/120.0.0.0', 'Connection': 'keep-alive', 'Content-Type': 'application/json', 'Referer': 'https://www.zhihu.com/signin'}
+, and the kwargs are:
+{'headers': {'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36 Edg/120.0.0.0', 'Connection': 'keep-alive', 'Content-Type': 'application/json', 'Referer': 'https://www.zhihu.com/signin'}} 
+2024-02-21 14:20:18.396 | INFO     | executors.core:run_primary:137 - result: ['//www.zhihu.com/question/644917917/answer/3402582278', '//www.zhihu.com/question/594296830/answer/3005779251', '//www.zhihu.com/question/367847608/answer/2980113954', '//www.zhihu.com/question/365848584/answer/2712467086', '//www.zhihu.com/question/280089090/answer/2721015687', '//www.zhihu.com/question/546293852/answer/2722228197']

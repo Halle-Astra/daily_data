@@ -1,0 +1,110 @@
+2024-01-25 20:40:38.753 | INFO     | utils.log:init_logger:11 - Initialized the logger instance with the configuration {'sink': 'logs/daily_data.log.txt', 'rotation': '12:00', 'level': 'DEBUG'}.
+2024-01-25 20:41:32.264 | INFO     | utils.log:init_logger:11 - Initialized the logger instance with the configuration {'sink': 'logs/daily_data.log.txt', 'rotation': '12:00', 'level': 'DEBUG'}.
+2024-01-25 20:41:32.267 | ERROR    | utils.easy:read_json:13 - 读取json文件 ../configs/sites.json 失败
+2024-01-25 21:44:27.140 | INFO     | utils.log:init_logger:11 - Initialized the logger instance with the configuration {'sink': 'logs/daily_data.log.txt', 'rotation': '12:00', 'level': 'DEBUG'}.
+2024-01-25 21:44:27.149 | ERROR    | utils.easy:read_json:13 - 读取json文件 ../configs/sites.json 失败
+Traceback (most recent call last):
+
+  File "D:\programs\daily_data\main.py", line 6, in <module>
+    manager  = Manager()
+               └ <class 'executors.manager.Manager'>
+
+  File "D:\programs\daily_data\executors\manager.py", line 8, in __init__
+    self.init()
+    │    └ <function Manager.init at 0x0000011496C43400>
+    └ <executors.manager.Manager object at 0x00000114975ABFA0>
+
+  File "D:\programs\daily_data\executors\manager.py", line 11, in init
+    sites_configs = read_json(SITES_CONFIG)
+                    │         └ '../configs/sites.json'
+                    └ <function read_json at 0x0000011496C43760>
+
+> File "D:\programs\daily_data\utils\easy.py", line 8, in read_json
+    f = open(file,encoding='utf-8')
+             └ '../configs/sites.json'
+
+FileNotFoundError: [Errno 2] No such file or directory: '../configs/sites.json'
+2024-01-25 21:45:20.948 | INFO     | utils.log:init_logger:11 - Initialized the logger instance with the configuration {'sink': 'logs/daily_data.log.txt', 'rotation': '12:00', 'level': 'DEBUG'}.
+2024-01-25 21:46:26.731 | INFO     | utils.log:init_logger:11 - Initialized the logger instance with the configuration {'sink': 'logs/daily_data.log.txt', 'rotation': '12:00', 'level': 'DEBUG'}.
+2024-01-25 21:48:41.856 | INFO     | utils.log:init_logger:11 - Initialized the logger instance with the configuration {'sink': 'logs/daily_data.log.txt', 'rotation': '12:00', 'level': 'DEBUG'}.
+2024-01-25 21:49:13.512 | INFO     | utils.log:init_logger:11 - Initialized the logger instance with the configuration {'sink': 'logs/daily_data.log.txt', 'rotation': '12:00', 'level': 'DEBUG'}.
+2024-01-25 21:50:10.500 | INFO     | utils.log:init_logger:11 - Initialized the logger instance with the configuration {'sink': 'logs/daily_data.log.txt', 'rotation': '12:00', 'level': 'DEBUG'}.
+2024-01-25 21:51:24.706 | INFO     | utils.log:init_logger:11 - Initialized the logger instance with the configuration {'sink': 'logs/daily_data.log.txt', 'rotation': '12:00', 'level': 'DEBUG'}.
+2024-01-25 22:03:31.414 | INFO     | utils.log:init_logger:11 - Initialized the logger instance with the configuration {'sink': 'logs/daily_data.log.txt', 'rotation': '12:00', 'level': 'DEBUG'}.
+2024-01-25 22:10:30.026 | INFO     | utils.log:init_logger:11 - Initialized the logger instance with the configuration {'sink': 'logs/daily_data.log.txt', 'rotation': '12:00', 'level': 'DEBUG'}.
+2024-01-25 22:11:11.407 | INFO     | utils.log:init_logger:11 - Initialized the logger instance with the configuration {'sink': 'logs/daily_data.log.txt', 'rotation': '12:00', 'level': 'DEBUG'}.
+2024-01-25 22:12:27.385 | INFO     | utils.log:init_logger:11 - Initialized the logger instance with the configuration {'sink': 'logs/daily_data.log.txt', 'rotation': '12:00', 'level': 'DEBUG'}.
+2024-01-25 22:12:51.447 | INFO     | utils.log:init_logger:11 - Initialized the logger instance with the configuration {'sink': 'logs/daily_data.log.txt', 'rotation': '12:00', 'level': 'DEBUG'}.
+2024-01-25 22:14:43.587 | INFO     | utils.log:init_logger:11 - Initialized the logger instance with the configuration {'sink': 'logs/daily_data.log.txt', 'rotation': '12:00', 'level': 'DEBUG'}.
+2024-01-25 22:16:59.659 | INFO     | utils.log:init_logger:11 - Initialized the logger instance with the configuration {'sink': 'logs/daily_data.log.txt', 'rotation': '12:00', 'level': 'DEBUG'}.
+2024-01-25 22:16:59.852 | ERROR    | utils.easy:read_json:13 - 读取json文件 ../configs/headers.json 失败
+Traceback (most recent call last):
+
+  File "D:\programs\daily_data\main.py", line 6, in <module>
+    manager  = Manager()
+               └ <class 'executors.manager.Manager'>
+
+  File "D:\programs\daily_data\executors\manager.py", line 8, in __init__
+    self.init()
+    │    └ <function Manager.init at 0x0000028E08CF3400>
+    └ <executors.manager.Manager object at 0x0000028E08E5BFA0>
+
+  File "D:\programs\daily_data\executors\manager.py", line 29, in init
+    init_group('must', self.must_sites)
+    │                  │    └ []
+    │                  └ <executors.manager.Manager object at 0x0000028E08E5BFA0>
+    └ <function Manager.init.<locals>.init_group at 0x0000028E75A23EB0>
+
+  File "D:\programs\daily_data\executors\manager.py", line 24, in init_group
+    site_executor = site_class(**group_config[site_name])
+                    │            │            └ 'zhihu'
+                    │            └ {'zhihu': {'base_url': 'https://www.zhihu.com/', 'login_path': 'signin', 'cookies': {'session_cookie': '_zap=cfd85948-bed1-47...
+                    └ <class 'executors.zhihu.Executor_v1'>
+
+  File "D:\programs\daily_data\executors\zhihu.py", line 7, in __init__
+    self.rq_client = RqClient(**kwargs)
+    │                │          └ {'base_url': 'https://www.zhihu.com/', 'login_path': 'signin', 'cookies': {'session_cookie': '_zap=cfd85948-bed1-474f-9110-a6...
+    │                └ <class 'clients.requests_client.Client'>
+    └ <executors.zhihu.Executor_v1 object at 0x0000028E0A7AA1D0>
+
+  File "D:\programs\daily_data\clients\requests_client.py", line 29, in __init__
+    self.base_headers = read_json(HEADERS_PATH)
+    │                   │         └ '../configs/headers.json'
+    │                   └ <function read_json at 0x0000028E08CF3760>
+    └ <clients.requests_client.Client object at 0x0000028E0A7A8580>
+
+> File "D:\programs\daily_data\utils\easy.py", line 8, in read_json
+    f = open(file,encoding='utf-8')
+             └ '../configs/headers.json'
+
+FileNotFoundError: [Errno 2] No such file or directory: '../configs/headers.json'
+2024-01-25 22:16:59.869 | INFO     | executors.manager:init_group:26 - The site zhihu has been initiated as zhihu.Executor_v1
+2024-01-25 22:16:59.869 | INFO     | executors.manager:init:31 - Site groups initiated. Fixed sites has 1. Relaxing sites has 0
+2024-01-25 22:17:17.079 | INFO     | utils.log:init_logger:11 - Initialized the logger instance with the configuration {'sink': 'logs/daily_data.log.txt', 'rotation': '12:00', 'level': 'DEBUG'}.
+2024-01-25 22:17:17.277 | INFO     | executors.manager:init_group:26 - The site zhihu has been initiated as zhihu.Executor_v1
+2024-01-25 22:17:17.278 | INFO     | executors.manager:init:31 - Site groups initiated. Fixed sites has 1. Relaxing sites has 0
+2024-01-25 22:17:56.048 | INFO     | utils.log:init_logger:11 - Initialized the logger instance with the configuration {'sink': 'logs/daily_data.log.txt', 'rotation': '12:00', 'level': 'DEBUG'}.
+2024-01-25 22:18:48.194 | INFO     | utils.log:init_logger:11 - Initialized the logger instance with the configuration {'sink': 'logs/daily_data.log.txt', 'rotation': '12:00', 'level': 'DEBUG'}.
+2024-01-25 22:18:51.601 | WARNING  | clients.requests_client:login:59 - Login failed, Wait till next round!
+2024-01-25 22:18:59.046 | WARNING  | clients.requests_client:login:59 - Login failed, Wait till next round!
+2024-01-25 22:30:28.417 | INFO     | utils.log:init_logger:11 - Initialized the logger instance with the configuration {'sink': 'logs/daily_data.log.txt', 'rotation': '12:00', 'level': 'DEBUG'}.
+2024-01-25 22:30:31.486 | INFO     | clients.requests_client:login:57 - Login successfully!
+2024-01-25 22:30:31.488 | INFO     | executors.manager:init_group:26 - The site zhihu has been initiated as zhihu.Executor_v1
+2024-01-25 22:30:31.489 | INFO     | executors.manager:init:31 - Site groups initiated. Fixed sites has 1. Relaxing sites has 0
+2024-01-25 22:31:51.120 | INFO     | utils.log:init_logger:11 - Initialized the logger instance with the configuration {'sink': 'logs/daily_data.log.txt', 'rotation': '12:00', 'level': 'DEBUG'}.
+2024-01-25 22:31:54.215 | INFO     | clients.requests_client:login:57 - Login successfully!
+2024-01-25 22:31:54.217 | INFO     | executors.manager:init_group:26 - The site zhihu has been initiated as zhihu.Executor_v1
+2024-01-25 22:31:54.217 | INFO     | executors.manager:init:31 - Site groups initiated. Fixed sites has 1. Relaxing sites has 0
+2024-01-25 22:33:12.725 | INFO     | utils.log:init_logger:11 - Initialized the logger instance with the configuration {'sink': 'logs/daily_data.log.txt', 'rotation': '12:00', 'level': 'DEBUG'}.
+2024-01-25 22:33:15.792 | INFO     | clients.requests_client:login:57 - Login successfully!
+2024-01-25 22:33:15.802 | INFO     | executors.manager:init_group:26 - The site zhihu has been initiated as zhihu.Executor_v1
+2024-01-25 22:33:15.803 | INFO     | executors.manager:init:31 - Site groups initiated. Fixed sites has 1. Relaxing sites has 0
+2024-01-26 08:15:27.788 | INFO     | utils.log:init_logger:11 - Initialized the logger instance with the configuration {'sink': 'logs/daily_data.log.txt', 'rotation': '12:00', 'level': 'DEBUG'}.
+2024-01-26 08:15:32.442 | INFO     | clients.requests_client:login:57 - Login successfully!
+2024-01-26 08:16:22.578 | INFO     | utils.log:init_logger:11 - Initialized the logger instance with the configuration {'sink': 'logs/daily_data.log.txt', 'rotation': '12:00', 'level': 'DEBUG'}.
+2024-01-26 08:16:26.485 | INFO     | clients.requests_client:login:57 - Login successfully!
+2024-01-26 08:16:51.924 | INFO     | utils.log:init_logger:11 - Initialized the logger instance with the configuration {'sink': 'logs/daily_data.log.txt', 'rotation': '12:00', 'level': 'DEBUG'}.
+2024-01-26 08:16:55.356 | INFO     | clients.requests_client:login:57 - Login successfully!
+2024-01-26 08:16:55.356 | INFO     | executors.zhihu:__init__:12 - https://www.zhihu.com/
+2024-01-26 08:16:55.357 | INFO     | executors.manager:init_group:26 - The site zhihu has been initiated as zhihu.Executor_v1
+2024-01-26 08:16:55.359 | INFO     | executors.manager:init:31 - Site groups initiated. Fixed sites has 1. Relaxing sites has 0

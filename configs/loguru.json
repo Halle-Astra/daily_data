@@ -1,0 +1,5 @@
+{
+  "sink": "logs/daily_data.log.txt",
+  "rotation":"12:00",
+  "level": "DEBUG"
+}

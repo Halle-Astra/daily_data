@@ -1,0 +1,69 @@
+2024-02-01 20:21:09.279 | INFO     | utils.log:init_logger:11 - Initialized the logger instance with the configuration {'sink': 'logs/daily_data.log.txt', 'rotation': '12:00', 'level': 'DEBUG'}.
+2024-02-01 20:21:13.166 | INFO     | clients.requests_client:login:61 - Login successfully!
+2024-02-01 20:21:13.169 | INFO     | executors.zhihu:__init__:12 - https://www.zhihu.com/
+2024-02-01 20:21:13.171 | INFO     | executors.manager:init_group:26 - The site zhihu has been initiated as zhihu.Executor_v1
+2024-02-01 20:21:13.171 | INFO     | executors.manager:init:31 - Site groups initiated. Fixed sites has 1. Relaxing sites has 0
+2024-02-01 20:23:44.433 | INFO     | utils.log:init_logger:11 - Initialized the logger instance with the configuration {'sink': 'logs/daily_data.log.txt', 'rotation': '12:00', 'level': 'DEBUG'}.
+2024-02-01 20:24:35.584 | INFO     | utils.log:init_logger:11 - Initialized the logger instance with the configuration {'sink': 'logs/daily_data.log.txt', 'rotation': '12:00', 'level': 'DEBUG'}.
+2024-02-01 20:25:17.835 | INFO     | utils.log:init_logger:11 - Initialized the logger instance with the configuration {'sink': 'logs/daily_data.log.txt', 'rotation': '12:00', 'level': 'DEBUG'}.
+2024-02-01 20:26:24.485 | INFO     | utils.log:init_logger:11 - Initialized the logger instance with the configuration {'sink': 'logs/daily_data.log.txt', 'rotation': '12:00', 'level': 'DEBUG'}.
+2024-02-01 20:27:04.601 | INFO     | utils.log:init_logger:11 - Initialized the logger instance with the configuration {'sink': 'logs/daily_data.log.txt', 'rotation': '12:00', 'level': 'DEBUG'}.
+2024-02-01 20:28:48.358 | INFO     | utils.log:init_logger:11 - Initialized the logger instance with the configuration {'sink': 'logs/daily_data.log.txt', 'rotation': '12:00', 'level': 'DEBUG'}.
+2024-02-01 22:57:52.779 | INFO     | utils.log:init_logger:11 - Initialized the logger instance with the configuration {'sink': 'logs/daily_data.log.txt', 'rotation': '12:00', 'level': 'DEBUG'}.
+2024-02-01 22:59:47.955 | INFO     | utils.log:init_logger:11 - Initialized the logger instance with the configuration {'sink': 'logs/daily_data.log.txt', 'rotation': '12:00', 'level': 'DEBUG'}.
+2024-02-01 23:01:01.142 | INFO     | utils.log:init_logger:11 - Initialized the logger instance with the configuration {'sink': 'logs/daily_data.log.txt', 'rotation': '12:00', 'level': 'DEBUG'}.
+2024-02-01 23:02:17.357 | INFO     | utils.log:init_logger:11 - Initialized the logger instance with the configuration {'sink': 'logs/daily_data.log.txt', 'rotation': '12:00', 'level': 'DEBUG'}.
+2024-02-01 23:02:21.085 | INFO     | clients.requests_client:login:63 - Login successfully!
+2024-02-01 23:02:25.227 | INFO     | clients.requests_client:login:63 - Login successfully!
+2024-02-01 23:02:25.232 | INFO     | executors.zhihu:__init__:14 - https://www.zhihu.com/
+2024-02-01 23:02:25.235 | INFO     | executors.manager:init_group:26 - The site zhihu has been initiated as zhihu.Executor_v1
+2024-02-01 23:02:25.240 | INFO     | executors.manager:init:31 - Site groups initiated. Fixed sites has 1. Relaxing sites has 0
+2024-02-01 23:06:08.135 | INFO     | utils.log:init_logger:11 - Initialized the logger instance with the configuration {'sink': 'logs/daily_data.log.txt', 'rotation': '12:00', 'level': 'DEBUG'}.
+2024-02-01 23:06:12.743 | INFO     | clients.requests_client:login:63 - Login successfully!
+2024-02-01 23:06:16.922 | INFO     | clients.requests_client:login:63 - Login successfully!
+2024-02-01 23:06:16.925 | INFO     | executors.zhihu:__init__:14 - https://www.zhihu.com/
+2024-02-01 23:06:16.926 | INFO     | executors.manager:init_group:26 - The site zhihu has been initiated as zhihu.Executor_v1
+2024-02-01 23:06:16.928 | INFO     | executors.manager:init:31 - Site groups initiated. Fixed sites has 1. Relaxing sites has 0
+2024-02-01 23:06:30.353 | INFO     | utils.log:init_logger:11 - Initialized the logger instance with the configuration {'sink': 'logs/daily_data.log.txt', 'rotation': '12:00', 'level': 'DEBUG'}.
+2024-02-01 23:06:34.247 | INFO     | clients.requests_client:login:63 - Login successfully!
+2024-02-01 23:06:37.933 | INFO     | clients.requests_client:login:63 - Login successfully!
+2024-02-01 23:06:37.935 | INFO     | executors.zhihu:__init__:14 - https://www.zhihu.com/
+2024-02-01 23:06:37.936 | INFO     | executors.manager:init_group:26 - The site zhihu has been initiated as zhihu.Executor_v1
+2024-02-01 23:06:37.937 | INFO     | executors.manager:init:31 - Site groups initiated. Fixed sites has 1. Relaxing sites has 0
+2024-02-01 23:09:03.533 | INFO     | utils.log:init_logger:11 - Initialized the logger instance with the configuration {'sink': 'logs/daily_data.log.txt', 'rotation': '12:00', 'level': 'DEBUG'}.
+2024-02-01 23:09:03.790 | INFO     | executors.core:run_and_retry:84 - decorate in run_and_retry
+2024-02-01 23:09:07.361 | INFO     | clients.requests_client:login:63 - Login successfully!
+2024-02-01 23:09:11.012 | INFO     | clients.requests_client:login:63 - Login successfully!
+2024-02-01 23:09:11.014 | INFO     | executors.zhihu:__init__:14 - https://www.zhihu.com/
+2024-02-01 23:09:11.016 | INFO     | executors.manager:init_group:26 - The site zhihu has been initiated as zhihu.Executor_v1
+2024-02-01 23:09:11.018 | INFO     | executors.manager:init:31 - Site groups initiated. Fixed sites has 1. Relaxing sites has 0
+2024-02-01 23:10:01.993 | INFO     | utils.log:init_logger:11 - Initialized the logger instance with the configuration {'sink': 'logs/daily_data.log.txt', 'rotation': '12:00', 'level': 'DEBUG'}.
+2024-02-01 23:10:06.421 | INFO     | clients.requests_client:login:63 - Login successfully!
+2024-02-01 23:10:09.914 | INFO     | clients.requests_client:login:63 - Login successfully!
+2024-02-01 23:10:09.916 | INFO     | executors.zhihu:__init__:14 - https://www.zhihu.com/
+2024-02-01 23:10:09.917 | INFO     | executors.manager:init_group:26 - The site zhihu has been initiated as zhihu.Executor_v1
+2024-02-01 23:10:09.918 | INFO     | executors.manager:init:31 - Site groups initiated. Fixed sites has 1. Relaxing sites has 0
+2024-02-01 23:12:29.183 | INFO     | utils.log:init_logger:11 - Initialized the logger instance with the configuration {'sink': 'logs/daily_data.log.txt', 'rotation': '12:00', 'level': 'DEBUG'}.
+2024-02-01 23:12:34.112 | INFO     | clients.requests_client:login:63 - Login successfully!
+2024-02-01 23:12:37.754 | INFO     | clients.requests_client:login:63 - Login successfully!
+2024-02-01 23:12:37.757 | INFO     | executors.zhihu:__init__:14 - https://www.zhihu.com/
+2024-02-01 23:12:37.759 | INFO     | executors.manager:init_group:26 - The site zhihu has been initiated as zhihu.Executor_v1
+2024-02-01 23:12:37.760 | INFO     | executors.manager:init:31 - Site groups initiated. Fixed sites has 1. Relaxing sites has 0
+2024-02-01 23:12:37.761 | INFO     | clients.requests_client:get:81 - the headers are: <executors.zhihu.Executor_v1 object at 0x0000020ABBBAB0A0>
+, and the kwargs are:{'headers': <executors.zhihu.Executor_v1 object at 0x0000020ABBBAB0A0>} 
+2024-02-01 23:13:55.022 | INFO     | utils.log:init_logger:11 - Initialized the logger instance with the configuration {'sink': 'logs/daily_data.log.txt', 'rotation': '12:00', 'level': 'DEBUG'}.
+2024-02-01 23:13:59.274 | INFO     | clients.requests_client:login:63 - Login successfully!
+2024-02-01 23:14:02.604 | INFO     | clients.requests_client:login:63 - Login successfully!
+2024-02-01 23:14:02.606 | INFO     | executors.zhihu:__init__:14 - https://www.zhihu.com/
+2024-02-01 23:14:02.606 | INFO     | executors.manager:init_group:26 - The site zhihu has been initiated as zhihu.Executor_v1
+2024-02-01 23:14:02.609 | INFO     | executors.manager:init:31 - Site groups initiated. Fixed sites has 1. Relaxing sites has 0
+2024-02-01 23:15:30.965 | INFO     | utils.log:init_logger:11 - Initialized the logger instance with the configuration {'sink': 'logs/daily_data.log.txt', 'rotation': '12:00', 'level': 'DEBUG'}.
+2024-02-01 23:15:35.658 | INFO     | clients.requests_client:login:63 - Login successfully!
+2024-02-01 23:15:39.412 | INFO     | clients.requests_client:login:63 - Login successfully!
+2024-02-01 23:15:39.414 | INFO     | executors.zhihu:__init__:14 - https://www.zhihu.com/
+2024-02-01 23:15:39.415 | INFO     | executors.manager:init_group:26 - The site zhihu has been initiated as zhihu.Executor_v1
+2024-02-01 23:15:39.416 | INFO     | executors.manager:init:31 - Site groups initiated. Fixed sites has 1. Relaxing sites has 0
+2024-02-01 23:15:39.418 | INFO     | clients.requests_client:get:81 - the headers are: {'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36 Edg/120.0.0.0', 'Connection': 'keep-alive', 'Content-Type': 'application/json', 'Referer': 'https://www.zhihu.com/signin'}
+, and the kwargs are:{'headers': {'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36 Edg/120.0.0.0', 'Connection': 'keep-alive', 'Content-Type': 'application/json', 'Referer': 'https://www.zhihu.com/signin'}} 
+2024-02-01 23:15:41.393 | INFO     | executors.core:run_primary:137 - result: ['//www.zhihu.com/question/610754839/answer/3377769463', '//www.zhihu.com/question/635330171/answer/3333648223', '//www.zhihu.com/question/610393227/answer/3111687678', '//www.zhihu.com/question/638890056/answer/3357612645', '//www.zhihu.com/question/457785980/answer/3217656382']
+2024-02-01 23:15:41.393 | INFO     | executors.core:run_primary:139 - ['//www.zhihu.com/question/610754839/answer/3377769463', '//www.zhihu.com/question/635330171/answer/3333648223', '//www.zhihu.com/question/610393227/answer/3111687678', '//www.zhihu.com/question/638890056/answer/3357612645', '//www.zhihu.com/question/457785980/answer/3217656382']
