@@ -21,13 +21,25 @@
 不然这种的拼接，代码量很难少掉。
 
 
-
-
 #### run_primary
 
 支持的方法：
 1. xpath（采用get获取html代码）
 2. post接口调用
+
+
+
+
+### zhihu
+
+目前主要爬取zhihu主页推荐的内容。
+
+知乎推荐板块的内容分类：
+1. 回答  `spanName=AnswerPage, subAppName=main`
+2. 文章(与是否专栏无关) `spanName=Post, subAppName=column`
+
+行啊，翻了好久推荐，才发现，几个星期时间，过了个年回来，知乎就不推荐视频了，把视频单独放一栏了。那刚好给我省事了。
+
 
 
 ### clients

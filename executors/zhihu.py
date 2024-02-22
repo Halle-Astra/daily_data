@@ -19,13 +19,16 @@ class Executor_v1(BaseExecutor):
     # def get_home(self):
     def __call__(self):
         answer_urls = super().run_primary()
+
         for answer_url in answer_urls:
+            answer_sample = dict(question={})
             answer_url = answer_url[2:]
             question_id = answer_url.split('/')[-3]
+            answer_id = answer_url.split('/')[-1]
 
-            answer_url = 'https://'+answer_url
+            answer_url = 'https://' + answer_url
             answer_r = self.rq_client.get(answer_url)
-            if answer_r.status_code==200:
+            if answer_r.status_code == 200:
                 answer_r.encoding = answer_r.apparent_encoding
                 answer_html = etree.HTML(answer_r.text)
                 answer_init_json = answer_html.xpath('//script[@id="js-initialData"]/text()')
@@ -34,26 +37,33 @@ class Executor_v1(BaseExecutor):
                 else:
                     answer_init_json = answer_init_json[0]
                     answer_init_json = json.loads(answer_init_json)
-                    question_json = answer_init_json['initialState']['entities']['questions'][question_id]
-                    question_title = question_json['title']
-                    question_content = question_json['editableDetail']
-                    question_topics = question_json['topics']
-                    logger.info('question content is {}'.format(question_content))
 
+                    if answer_init_json['spanName'] == 'AnswerPage':
+                        answer_sample['content_type'] = 'answer'
 
-            # 最后分析发现，问题的细节本身在answer的页面里能找到
-            # question_url = 'https://' + '/'.join(answer_url.split('/')[:3])
-            # question_init_web = self.rq_client.get(question_url)
-            # if question_init_web.status_code == 200:
-            #     question_init_web.encoding = question_init_web.apparent_encoding
-            #     q_init_html = etree.HTML(question_init_web.text)
-            #     q_info = q_init_html.xpath('//script[@id="js-initialData"]/text()')  # 会得到一大堆东西
-            #     if len(q_info) != 1:
-            #         logger.warning('The number of question information is not 1!')
-            #     else:
-            #         q_info = q_info[0]
-            #         q_info = json.loads(q_info)
-            #     logger.info(q_info)
+                        question_json = answer_init_json['initialState']['entities']['questions'][question_id]
+                        question_title = question_json['title']
+                        question_content = question_json['editableDetail']
+                        question_topics = question_json['topics']
+                        logger.debug('question content is {}'.format(question_content))
+
+                        answer_sample['question_verbose_json'] = question_json
+                        answer_sample['question'] = dict(
+                            title=question_title,
+                            content=question_content,
+                            topics=question_topics,
+                            id=question_id
+                        )
+
+                        answer_entity = answer_init_json['initialState']['entities']['answers'][answer_id]
+                        answer_simple = dict(
+                            content = answer_entity['content'],
+                            answer_id = answer_id,
+                        )
+                        answer_sample['answer'] = answer_simple
+                        answer_sample['answer_verbose_json'] = answer_entity
+                        answer_sample['original_json'] = answer_init_json
+
 
     def start(self):
         self.__call__()
