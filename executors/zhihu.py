@@ -16,6 +16,21 @@ class Executor_v1(BaseExecutor):
         self.base_url = kwargs['base_url']
         logger.info(self.base_url)
 
+    def get_answer_comments(self, answer_id, limit=20, referer=''):
+        # template = 'https://www.zhihu.com/api/v4/comment_v5/answers/3398863180/root_comment?order_by=score&limit=20&offset='
+        template = f'https://www.zhihu.com/api/v4/comment_v5/answers/{answer_id}/root_comment?order_by=score&limit=20&offset='
+        headers = {}
+        for key in self.rq_client.headers:
+            headers[key] = self.rq_client.headers[key]
+        if referer:
+            headers['Referer'] = referer
+        headers['Cookie'] = self.rq_client.init_cookies['session_cookie']
+        headers['X-Requested-With'] = 'fetch'
+        headers['X-Zse-93'] = '101_3_3.0'
+        answer_comments = self.rq_client.get(template, headers=headers).json()
+        logger.debug('answer_comments of  {} are\n{}'.format(template, answer_comments))
+        logger.debug('headers is {}'.format(headers))
+
     # def get_home(self):
     def __call__(self):
         answer_urls = super().run_primary()
@@ -57,13 +72,13 @@ class Executor_v1(BaseExecutor):
 
                         answer_entity = answer_init_json['initialState']['entities']['answers'][answer_id]
                         answer_simple = dict(
-                            content = answer_entity['content'],
-                            answer_id = answer_id,
+                            content=answer_entity['content'],
+                            answer_id=answer_id,
                         )
                         answer_sample['answer'] = answer_simple
                         answer_sample['answer_verbose_json'] = answer_entity
                         answer_sample['original_json'] = answer_init_json
-
+                        self.get_answer_comments(answer_id, referer=answer_url)
 
     def start(self):
         self.__call__()

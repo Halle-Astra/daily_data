@@ -60,3 +60,6 @@
 [__import__内置方法的fromlist参数，巨坑！](https://zky.name/article/72.html#:~:text=__import,b%E5%B0%86%E5%AF%BC%E5%85%A5b%E6%A8%A1%E5%9D%97%E3%80%82)
 
 [发现了一个很牛的爬虫库的样子，本项目估计是不会去学这个的，到时再研究研究](https://www.jianshu.com/p/72a1f57b333a)
+
+[如何在python项目中添加js的依赖（和前端直接加一样，只是注意下目录就好了）](https://www.cnblogs.com/presleyren/p/11751050.html#:~:text=%E4%B8%80.%E5%AE%89%E8%A3%85%E4%BE%9D%E8%B5%96%20npm%20install%20jsdom%20%E4%BA%8C.%E5%AF%BC%E5%85%A5%E5%8C%85%20js_obj%20%3D%20execjs.,%3D%20dom.window%3B%20document%20%3D%20window.document%3B%20XMLHttpRequest%20%3D%20window.XMLHttpRequest%3B)
+

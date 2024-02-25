@@ -45,6 +45,8 @@ class Client:
             cookies['session_cookie'] = c_f.read()
             c_f.close()
 
+            self.init_cookies = cookies
+
         # set cookies
         if cookies is not None:
             for key in cookies:
@@ -80,19 +82,23 @@ class Client:
             "LoginError: Login failed, ensure your login credential is correct!"
         )
 
-    def get(self, url, headers=None, **kwargs):
+    def get(self, url, headers=None, set_referer=False, **kwargs):
         if headers is None:
             headers = self.headers
         if headers is not None:
             kwargs['headers'] = headers
-        logger.info('the headers are: \n{}\n, and the kwargs are:\n{} '.format(headers,kwargs))
+        # logger.info('the headers are: \n{}\n, and the kwargs are:\n{} '.format(headers,kwargs))
         response = self.client.get(url, **kwargs)
+        if set_referer:
+            self.headers['Referer'] = url
         return response
 
-    def post(self, url, headers=None, **kwargs):
+    def post(self, url, headers=None, set_referer=False, **kwargs):
         if headers is None:
             headers = self.headers
         if headers is not None:
             kwargs['headers'] = headers
         response = self.client.post(url, **kwargs)
+        if set_referer:
+            self.headers['Referer'] = url
         return response
