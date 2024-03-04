@@ -1,0 +1,381 @@
+{
+    "featured_counts": 0,
+    "common_counts": 8,
+    "collapsed_counts": 0,
+    "reviewing_counts": 0,
+    "comment_status": {
+        "can_comment": true,
+        "can_reply": true,
+        "toast": "评论千万条，友善第一条"
+    },
+    "paging": {
+        "is_end": true,
+        "is_start": true,
+        "next": "https://www.zhihu.com/api/v4/answers/3394865374/root_comments?limit=10&offset=10&order_by=normal",
+        "previous": "https://www.zhihu.com/api/v4/answers/3394865374/root_comments?limit=10&offset=0&order_by=normal",
+        "totals": 0
+    },
+    "data": [
+        {
+            "id": 10800696725,
+            "type": "comment",
+            "url": "https://www.zhihu.com/api/v4/comments/10800696725",
+            "content": "<p>（不太了解Lean，）感觉这种约定不一定要追求说服checker，在可控的context里也可以作为axiom加入，比如$\\forall A, B. A \\subseteq B \\implies \\forall a\\in A. a\\in B$（当然能直接证明出来就更好了，虽然我感觉这应该就是\\subseteq的定义......）。这些也都证实了你的观察，以自然语言接受数学训练的人或多或少接受了一些隐含的约定/假设。不过checker本身也是建立在一套基础axioms之上，用户有必要也可以按需扩展。</p>",
+            "featured": false,
+            "top": false,
+            "collapsed": false,
+            "is_author": false,
+            "is_delete": false,
+            "created_time": 1707806579,
+            "resource_type": "answer",
+            "reviewing": false,
+            "allow_like": true,
+            "allow_delete": false,
+            "allow_reply": true,
+            "allow_vote": true,
+            "can_recommend": false,
+            "can_collapse": false,
+            "attached_info": "ggIGCAsQARgA",
+            "author": {
+                "role": "normal",
+                "member": {
+                    "id": "e7ea5d272143c421678d0152306e461b",
+                    "url_token": "scott-tao",
+                    "name": "0Attocs",
+                    "avatar_url": "https://pic1.zhimg.com/v2-6bbe66463547c1461f2a71d18f255597.jpg?source=06d4cd63",
+                    "avatar_url_template": "https://pica.zhimg.com/v2-6bbe66463547c1461f2a71d18f255597.jpg?source=06d4cd63",
+                    "is_org": false,
+                    "type": "people",
+                    "url": "https://www.zhihu.com/api/v4/people/e7ea5d272143c421678d0152306e461b",
+                    "user_type": "people",
+                    "headline": "现代魔法",
+                    "badge": [],
+                    "gender": 1,
+                    "is_advertiser": false,
+                    "vip_info": {
+                        "is_vip": false
+                    }
+                }
+            },
+            "vote_count": 1,
+            "reply_to_author": null,
+            "voting": false,
+            "liked": false,
+            "disliked": false,
+            "censor_status": 0,
+            "address_text": "IP 属地美国",
+            "child_comment_count": 4,
+            "child_comments": [
+                {
+                    "id": 10801161528,
+                    "type": "comment",
+                    "url": "https://www.zhihu.com/api/v4/comments/10801161528",
+                    "content": "lean是基于类型论而非集合论的，“整数类型是实数类型的子集”这样的话在类型论里并不make sense。但是比如说现在我设a是整数类型，之后我想把它看成实数类型也是可以的，这就好像C++的类型强制转换一样，就比如说C++里我设int a=5，之后再double(a)，这里的double就充当了回答中的包含映射i，lean里是类似的。",
+                    "featured": false,
+                    "top": false,
+                    "collapsed": false,
+                    "is_author": false,
+                    "is_delete": false,
+                    "created_time": 1707814603,
+                    "resource_type": "answer",
+                    "reviewing": false,
+                    "allow_like": true,
+                    "allow_delete": false,
+                    "allow_reply": true,
+                    "allow_vote": true,
+                    "can_recommend": false,
+                    "can_collapse": false,
+                    "attached_info": "ggIGCAwQARgA",
+                    "author": {
+                        "role": "normal",
+                        "member": {
+                            "id": "2a625f16e6cf8778422a472112f289cb",
+                            "url_token": "zhai-sen-8",
+                            "name": "寨森CDM",
+                            "avatar_url": "https://picx.zhimg.com/v2-a0648fbd3170f76109c991a697fe16d1.jpg?source=06d4cd63",
+                            "avatar_url_template": "https://pic1.zhimg.com/v2-a0648fbd3170f76109c991a697fe16d1.jpg?source=06d4cd63",
+                            "is_org": false,
+                            "type": "people",
+                            "url": "https://www.zhihu.com/api/v4/people/2a625f16e6cf8778422a472112f289cb",
+                            "user_type": "people",
+                            "headline": "每一段旅行都有终点",
+                            "badge": [
+                                {
+                                    "type": "best_answerer",
+                                    "description": "优秀回答者"
+                                }
+                            ],
+                            "gender": 1,
+                            "is_advertiser": false,
+                            "vip_info": {
+                                "is_vip": false
+                            }
+                        }
+                    },
+                    "vote_count": 6,
+                    "reply_to_author": {
+                        "role": "normal",
+                        "member": {
+                            "id": "e7ea5d272143c421678d0152306e461b",
+                            "url_token": "scott-tao",
+                            "name": "0Attocs",
+                            "avatar_url": "https://picx.zhimg.com/v2-6bbe66463547c1461f2a71d18f255597.jpg?source=06d4cd63",
+                            "avatar_url_template": "https://picx.zhimg.com/v2-6bbe66463547c1461f2a71d18f255597.jpg?source=06d4cd63",
+                            "is_org": false,
+                            "type": "people",
+                            "url": "https://www.zhihu.com/api/v4/people/e7ea5d272143c421678d0152306e461b",
+                            "user_type": "people",
+                            "headline": "现代魔法",
+                            "badge": [],
+                            "gender": 1,
+                            "is_advertiser": false,
+                            "vip_info": {
+                                "is_vip": false
+                            }
+                        }
+                    },
+                    "voting": false,
+                    "liked": false,
+                    "disliked": false,
+                    "censor_status": 0,
+                    "address_text": "IP 属地英国"
+                },
+                {
+                    "id": 10801368961,
+                    "type": "comment",
+                    "url": "https://www.zhihu.com/api/v4/comments/10801368961",
+                    "content": "这不是类型论的问题，在通常的集合论的实现里整数也不是实数的子集",
+                    "featured": false,
+                    "top": false,
+                    "collapsed": false,
+                    "is_author": false,
+                    "is_delete": false,
+                    "created_time": 1707821784,
+                    "resource_type": "answer",
+                    "reviewing": false,
+                    "allow_like": true,
+                    "allow_delete": false,
+                    "allow_reply": true,
+                    "allow_vote": true,
+                    "can_recommend": false,
+                    "can_collapse": false,
+                    "attached_info": "ggIGCAwQARgB",
+                    "author": {
+                        "role": "normal",
+                        "member": {
+                            "id": "1adaa92bf934b2436a1f4d62a9ab037d",
+                            "url_token": "zhao-yu-yang-23-57",
+                            "name": "Ann(FR)",
+                            "avatar_url": "https://pic1.zhimg.com/v2-4621cd9f0d8d506b70ecd88015c768ca.jpg?source=06d4cd63",
+                            "avatar_url_template": "https://pic1.zhimg.com/v2-4621cd9f0d8d506b70ecd88015c768ca.jpg?source=06d4cd63",
+                            "is_org": false,
+                            "type": "people",
+                            "url": "https://www.zhihu.com/api/v4/people/1adaa92bf934b2436a1f4d62a9ab037d",
+                            "user_type": "people",
+                            "headline": "alias negiizhao",
+                            "badge": [],
+                            "gender": -1,
+                            "is_advertiser": false,
+                            "vip_info": {
+                                "is_vip": true,
+                                "vip_icon": {
+                                    "url": "https://picx.zhimg.com/v2-4812630bc27d642f7cafcd6cdeca3d7a_r.png?source=06d4cd63",
+                                    "night_mode_url": "https://picx.zhimg.com/v2-c9686ff064ea3579730756ac6c289978_r.png?source=06d4cd63"
+                                }
+                            }
+                        }
+                    },
+                    "vote_count": 1,
+                    "reply_to_author": {
+                        "role": "normal",
+                        "member": {
+                            "id": "2a625f16e6cf8778422a472112f289cb",
+                            "url_token": "zhai-sen-8",
+                            "name": "寨森CDM",
+                            "avatar_url": "https://picx.zhimg.com/v2-a0648fbd3170f76109c991a697fe16d1.jpg?source=06d4cd63",
+                            "avatar_url_template": "https://pic1.zhimg.com/v2-a0648fbd3170f76109c991a697fe16d1.jpg?source=06d4cd63",
+                            "is_org": false,
+                            "type": "people",
+                            "url": "https://www.zhihu.com/api/v4/people/2a625f16e6cf8778422a472112f289cb",
+                            "user_type": "people",
+                            "headline": "每一段旅行都有终点",
+                            "badge": [
+                                {
+                                    "type": "best_answerer",
+                                    "description": "优秀回答者"
+                                }
+                            ],
+                            "gender": 1,
+                            "is_advertiser": false,
+                            "vip_info": {
+                                "is_vip": false
+                            }
+                        }
+                    },
+                    "voting": false,
+                    "liked": false,
+                    "disliked": false,
+                    "censor_status": 0,
+                    "address_text": "IP 属地安徽"
+                }
+            ]
+        },
+        {
+            "id": 10813719342,
+            "type": "comment",
+            "url": "https://www.zhihu.com/api/v4/comments/10813719342",
+            "content": "假如AI被大量投喂以下这些数据：加速运动的自由落体视频，抛物体的抛物线运动，行星运动的大量数据、图像和视频。<br><br>它能不能发现万有引力定律？ 或者，它生成视频时能否做到视频中的物体符合万有引力定律？",
+            "featured": false,
+            "top": false,
+            "collapsed": false,
+            "is_author": false,
+            "is_delete": false,
+            "created_time": 1709127853,
+            "resource_type": "answer",
+            "reviewing": false,
+            "allow_like": true,
+            "allow_delete": false,
+            "allow_reply": true,
+            "allow_vote": true,
+            "can_recommend": false,
+            "can_collapse": false,
+            "attached_info": "ggIGCAsQARgB",
+            "author": {
+                "role": "normal",
+                "member": {
+                    "id": "ee882a390cbf5f96f9e1fb0260ceba17",
+                    "url_token": "abada-82",
+                    "name": "abada张宏兵",
+                    "avatar_url": "https://pica.zhimg.com/v2-1ab9bad3c00bdb9e8dad8cbad05f593c.jpg?source=06d4cd63",
+                    "avatar_url_template": "https://pic1.zhimg.com/v2-1ab9bad3c00bdb9e8dad8cbad05f593c.jpg?source=06d4cd63",
+                    "is_org": false,
+                    "type": "people",
+                    "url": "https://www.zhihu.com/api/v4/people/ee882a390cbf5f96f9e1fb0260ceba17",
+                    "user_type": "people",
+                    "headline": "物理中的数学的可视化审美",
+                    "badge": [],
+                    "gender": -1,
+                    "is_advertiser": false,
+                    "vip_info": {
+                        "is_vip": true,
+                        "vip_icon": {
+                            "url": "https://picx.zhimg.com/v2-4812630bc27d642f7cafcd6cdeca3d7a_r.png?source=06d4cd63",
+                            "night_mode_url": "https://pica.zhimg.com/v2-c9686ff064ea3579730756ac6c289978_r.png?source=06d4cd63"
+                        }
+                    }
+                }
+            },
+            "vote_count": 0,
+            "reply_to_author": null,
+            "voting": false,
+            "liked": false,
+            "disliked": false,
+            "censor_status": 0,
+            "address_text": "IP 属地北京",
+            "child_comment_count": 0,
+            "child_comments": []
+        },
+        {
+            "id": 10808648838,
+            "type": "comment",
+            "url": "https://www.zhihu.com/api/v4/comments/10808648838",
+            "content": "我看都没人回答，所以试着邀请一下，感谢您～（之前我都取消关注这个问题了[捂脸]）",
+            "featured": false,
+            "top": false,
+            "collapsed": false,
+            "is_author": false,
+            "is_delete": false,
+            "created_time": 1708619223,
+            "resource_type": "answer",
+            "reviewing": false,
+            "allow_like": true,
+            "allow_delete": false,
+            "allow_reply": true,
+            "allow_vote": true,
+            "can_recommend": false,
+            "can_collapse": false,
+            "attached_info": "ggIGCAsQARgC",
+            "author": {
+                "role": "ancestor",
+                "member": {
+                    "id": "79a8439462c13161aa5b345a7234f104",
+                    "url_token": "coordinate-98",
+                    "name": "coordinate",
+                    "avatar_url": "https://pic1.zhimg.com/v2-f7a139345777d698d4e19e4447bc691a.jpg?source=06d4cd63",
+                    "avatar_url_template": "https://picx.zhimg.com/v2-f7a139345777d698d4e19e4447bc691a.jpg?source=06d4cd63",
+                    "is_org": false,
+                    "type": "people",
+                    "url": "https://www.zhihu.com/api/v4/people/79a8439462c13161aa5b345a7234f104",
+                    "user_type": "people",
+                    "headline": "",
+                    "badge": [],
+                    "gender": 1,
+                    "is_advertiser": false,
+                    "vip_info": {
+                        "is_vip": false
+                    }
+                }
+            },
+            "vote_count": 0,
+            "reply_to_author": null,
+            "voting": false,
+            "liked": false,
+            "disliked": false,
+            "censor_status": 0,
+            "address_text": "IP 属地上海",
+            "child_comment_count": 0,
+            "child_comments": []
+        },
+        {
+            "id": 10803837416,
+            "type": "comment",
+            "url": "https://www.zhihu.com/api/v4/comments/10803837416",
+            "content": "<p>交给Ai就完了</p>",
+            "featured": false,
+            "top": false,
+            "collapsed": false,
+            "is_author": false,
+            "is_delete": false,
+            "created_time": 1708146014,
+            "resource_type": "answer",
+            "reviewing": false,
+            "allow_like": true,
+            "allow_delete": false,
+            "allow_reply": true,
+            "allow_vote": true,
+            "can_recommend": false,
+            "can_collapse": false,
+            "attached_info": "ggIGCAsQARgD",
+            "author": {
+                "role": "normal",
+                "member": {
+                    "id": "6d68794e3e3d30fdf372233c23b3669c",
+                    "url_token": "zhihao-zhang-18",
+                    "name": "Roosevelt",
+                    "avatar_url": "https://pic1.zhimg.com/v2-7f7b3440f4a88b1a55876d5c30c33d6f.jpg?source=06d4cd63",
+                    "avatar_url_template": "https://pic1.zhimg.com/v2-7f7b3440f4a88b1a55876d5c30c33d6f.jpg?source=06d4cd63",
+                    "is_org": false,
+                    "type": "people",
+                    "url": "https://www.zhihu.com/api/v4/people/6d68794e3e3d30fdf372233c23b3669c",
+                    "user_type": "people",
+                    "headline": "有限元与科学计算",
+                    "badge": [],
+                    "gender": 1,
+                    "is_advertiser": false,
+                    "vip_info": {
+                        "is_vip": false
+                    }
+                }
+            },
+            "vote_count": 0,
+            "reply_to_author": null,
+            "voting": false,
+            "liked": false,
+            "disliked": false,
+            "censor_status": 0,
+            "address_text": "IP 属地山西",
+            "child_comment_count": 0,
+            "child_comments": []
+        }
+    ]
+}

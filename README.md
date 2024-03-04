@@ -63,3 +63,10 @@
 
 [如何在python项目中添加js的依赖（和前端直接加一样，只是注意下目录就好了）](https://www.cnblogs.com/presleyren/p/11751050.html#:~:text=%E4%B8%80.%E5%AE%89%E8%A3%85%E4%BE%9D%E8%B5%96%20npm%20install%20jsdom%20%E4%BA%8C.%E5%AF%BC%E5%85%A5%E5%8C%85%20js_obj%20%3D%20execjs.,%3D%20dom.window%3B%20document%20%3D%20window.document%3B%20XMLHttpRequest%20%3D%20window.XMLHttpRequest%3B)
 
+[(0, func)[args]](https://juejin.cn/post/7127291361786593316)
+
+### Notes
+
+#### JS修改当前网页地址
+
+`window.location.href="xxxx"`

@@ -5,7 +5,31 @@ from loguru import logger
 from .core import BaseExecutor
 from lxml import etree
 import json
+import execjs
+import base64
+import hashlib
 
+
+class Zse96:
+    def __init__(self):
+        self.f_helper = self.init()
+
+    def init(self, js_code='js/zse96v2.js'):
+        with open(js_code, encoding='utf-8') as f:
+            js_code = f.read()
+        ctx = execjs.compile(js_code, cwd='js')
+        return ctx
+
+    def __call__(self, url, v):
+        urlp = url.split('https://www.zhihu.com')[1]
+        string_composed = '+'.join(["101_3_3.0", urlp, v])
+        v_md5 = hashlib.md5(string_composed.encode()).hexdigest()
+        res = self.f_helper.call("encrypt_core", v_md5)
+        res = base64.b64encode(res.encode()).decode()
+        logger.debug('the result of x-zse-96 is {}'.format(res))
+        return res
+
+zse96 = Zse96()
 
 class Executor_v1(BaseExecutor):
     def __init__(self, **kwargs):
@@ -24,9 +48,17 @@ class Executor_v1(BaseExecutor):
             headers[key] = self.rq_client.headers[key]
         if referer:
             headers['Referer'] = referer
-        headers['Cookie'] = self.rq_client.init_cookies['session_cookie']
-        headers['X-Requested-With'] = 'fetch'
-        headers['X-Zse-93'] = '101_3_3.0'
+        headers['cookie'] = self.rq_client.init_cookies['session_cookie']
+        def extract_d_c0(c):
+            cs = c.split(';')
+            for ii in cs:
+                ii_split = ii.split('=')
+                if ii_split[0].strip()=="d_c0":
+                    return ii_split[1]+'='+ii_split[2]
+
+        headers['x-requested-with'] = 'fetch'
+        headers['x-zse-93'] = '101_3_3.0'
+        headers['x-zse-96'] = '2.0_' + zse96(template, extract_d_c0(headers['cookie']))
         answer_comments = self.rq_client.get(template, headers=headers).json()
         logger.debug('answer_comments of  {} are\n{}'.format(template, answer_comments))
         logger.debug('headers is {}'.format(headers))
