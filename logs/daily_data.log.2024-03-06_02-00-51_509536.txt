@@ -1,0 +1,9 @@
+2024-03-06 02:00:51.504 | INFO     | utils.log:init_logger:11 - Initialized the logger instance with the configuration {'sink': 'logs/daily_data.log.txt', 'rotation': '12:00', 'level': 'DEBUG'}.
+2024-03-06 02:04:43.981 | INFO     | utils.log:init_logger:11 - Initialized the logger instance with the configuration {'sink': 'logs/daily_data.log.txt', 'rotation': '12:00', 'level': 'DEBUG'}.
+2024-03-06 02:04:48.182 | INFO     | clients.requests_client:login:72 - Login successfully!
+2024-03-06 02:04:50.815 | INFO     | clients.requests_client:login:72 - Login successfully!
+2024-03-06 02:04:50.818 | INFO     | executors.zhihu:__init__:41 - https://www.zhihu.com/
+2024-03-06 02:04:50.821 | INFO     | executors.manager:init_group:26 - The site zhihu has been initiated as zhihu.Executor_v1
+2024-03-06 02:04:50.828 | INFO     | executors.manager:init:31 - Site groups initiated. Fixed sites has 1. Relaxing sites has 0
+2024-03-06 02:04:51.997 | INFO     | executors.core:run_primary:137 - result: ['//www.zhihu.com/question/646610382/answer/3418860615', '//www.zhihu.com/question/486902519/answer/3362977699', '//www.zhihu.com/question/24324102/answer/2292772625']
+2024-03-06 02:04:52.638 | DEBUG    | executors.zhihu:__call__:91 - question content is <p>距离上一次GPT-4.5话题热潮已经过去差不多两个月，但迟迟不见OpenAI发出什么动静。GPT-4.5究竟什么时候发布</p>
