@@ -207,4 +207,7 @@ class Executor_v1(BaseExecutor):
 
     def start(self):
         while True:
-            self.__call__()
+            try:
+                self.__call__()
+            except:
+                logger.error("出现错误，可能被反爬了，将跳过此次爬取")
