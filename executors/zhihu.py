@@ -44,6 +44,7 @@ class Executor_v1(BaseExecutor):
         self.base_url = kwargs['base_url']
         logger.info(self.base_url)
 
+    @antispider
     def get_comments(self, target_id, limit=20, referer='', target_type='answer'):
         """
 
@@ -53,7 +54,7 @@ class Executor_v1(BaseExecutor):
         :param target_type: Optional: ['answer', 'article']
         :return:
         """
-
+        @antispider
         def get_childs(comment):
             child_url_template = 'https://www.zhihu.com/api/v4/comment_v5/comment/<comment_id>/child_comment?order_by=ts&limit=20&offset='
             childs_num = comment['child_comment_count']
@@ -126,6 +127,7 @@ class Executor_v1(BaseExecutor):
             # logger.debug('headers is {}'.format(headers))
         return comments
 
+    @antispider
     def process_answer_url(self, answer_url):
         answer_sample = dict(question={})
         answer_url = answer_url[2:]
