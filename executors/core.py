@@ -4,16 +4,26 @@ from easydict import EasyDict
 from utils import url_toolkit
 from lxml import etree
 from functools import wraps
-
+import random
+import time
 
 class AntiSpiderExecutor:
-    def __init__(self):
+    def __init__(self, min_sleep=1, max_sleep=30):
+        self.min_sleep=min_sleep
+        self.max_sleep=max_sleep
         pass
+
+    def do_anti(self):
+        t = random.randint(self.min_sleep, self.max_sleep)
+        logger.debug("为防止反爬，将睡眠{}秒".format(t))
+        time.sleep(t)
 
     def __call__(self, func):
         @wraps(func)
         def wrapped_func(*args, **kwargs):
+            self.do_anti()
             pass
+
             res = func(*args, **kwargs)
             return res
 

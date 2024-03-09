@@ -9,6 +9,8 @@ import execjs
 import base64
 import hashlib
 import time
+from .core import antispider
+
 
 class Zse96:
     def __init__(self):
@@ -29,7 +31,9 @@ class Zse96:
         logger.debug('the result of x-zse-96 is {}'.format(res))
         return res
 
+
 zse96 = Zse96()
+
 
 class Executor_v1(BaseExecutor):
     def __init__(self, **kwargs):
@@ -49,6 +53,7 @@ class Executor_v1(BaseExecutor):
         :param target_type: Optional: ['answer', 'article']
         :return:
         """
+
         def get_childs(comment):
             child_url_template = 'https://www.zhihu.com/api/v4/comment_v5/comment/<comment_id>/child_comment?order_by=ts&limit=20&offset='
             childs_num = comment['child_comment_count']
@@ -63,7 +68,7 @@ class Executor_v1(BaseExecutor):
             while not break_flag:
                 try_cnt = 0
                 max_try = 3
-                while True: # 这部分之后再统一为try的装饰器
+                while True:  # 这部分之后再统一为try的装饰器
                     child_comments_r = self.rq_client.get(child_url)
                     if child_comments_r.status_code == 200:
                         child_comments_json = child_comments_r.json()
@@ -175,7 +180,7 @@ class Executor_v1(BaseExecutor):
         url = url[2:]
         url_comps = url.split('/')
         if url_comps[0] == 'www.zhihu.com' and url_comps[1] == 'question' \
-            and url_comps[3] == 'answer':
+                and url_comps[3] == 'answer':
             url_type = 'answer'
         elif url_comps[0] == 'zhuanlan.zhihu.com':
             url_type = 'article'
@@ -184,6 +189,7 @@ class Executor_v1(BaseExecutor):
         return url_type
 
     # def get_home(self):
+    @antispider
     def __call__(self):
         recommendation_urls = super().run_primary()
 
@@ -194,14 +200,11 @@ class Executor_v1(BaseExecutor):
                 answer_content = self.process_answer_url(recommendation_url)
                 contents.append(answer_content)
             pass
-        f=open('output.jsonl','w', encoding='utf-8')
+        f = open('output.jsonl', 'a', encoding='utf-8')
         contents = [json.dumps(i, ensure_ascii=False) for i in contents]
         f.write('\n'.join(contents))
         f.close()
 
-
-
-
-
     def start(self):
-        self.__call__()
+        while True:
+            self.__call__()
